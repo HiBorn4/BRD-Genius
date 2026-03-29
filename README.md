@@ -2,7 +2,7 @@
 
 # 🧠 BRD Genius
 
-### *Turn any meeting recording or document into a professional Business Requirements Document — in minutes.*
+### *Turn any meeting recording or document into a professional Business Requirements Document - in minutes.*
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
@@ -27,7 +27,7 @@
   ![BRD Genius Demo](docs/screenshots/demo-overview.png)
 -->
 
-> 🖼️ *[Screenshot: API workflow — upload → transcribe → generate → export]*  
+> 🖼️ *[Screenshot: API workflow - upload → transcribe → generate → export]*  
 > *See the [Screenshots & Recordings](#-screenshots--demo) section for capture instructions.*
 
 </div>
@@ -52,7 +52,7 @@
 
 ## 🚀 What It Does
 
-**BRD Genius** is a production-ready REST API that automates the creation of Business Requirements Documents from raw, unstructured inputs. It bridges the gap between a business meeting and a formal, structured BRD — a task that traditionally takes hours of manual analyst work.
+**BRD Genius** is a production-ready REST API that automates the creation of Business Requirements Documents from raw, unstructured inputs. It bridges the gap between a business meeting and a formal, structured BRD - a task that traditionally takes hours of manual analyst work.
 
 **Core capabilities:**
 
@@ -64,10 +64,10 @@
 | 💬 Chatbot Q&A answers | Conversational BRD refinement | ✅ Production-ready document |
 
 **What makes it different:**
-- **Multi-modal input** — handles video, audio, documents, and cloud links in one pipeline
-- **Iterative refinement** — a smart chatbot asks targeted follow-up questions based on BRD gaps
-- **Enterprise-ready** — SSO/JWT auth, GCS storage, Firestore metadata, Secret Manager for zero-secrets-in-code
-- **Dual AI providers** — Azure OpenAI (GPT-4) for generation, AWS Bedrock Claude 3.5 for conversational Q&A
+- **Multi-modal input** - handles video, audio, documents, and cloud links in one pipeline
+- **Iterative refinement** - a smart chatbot asks targeted follow-up questions based on BRD gaps
+- **Enterprise-ready** - SSO/JWT auth, GCS storage, Firestore metadata, Secret Manager for zero-secrets-in-code
+- **Dual AI providers** - Azure OpenAI (GPT-4) for generation, AWS Bedrock Claude 3.5 for conversational Q&A
 
 ---
 
@@ -143,8 +143,8 @@ Base URL: `http://localhost:8501/brdfrdgeneration`
 | `POST` | `/uploadinbetween` | Add more files mid-session |
 | `GET` | `/listfiles` | List all sessions for a user |
 | `POST` | `/delete` | Delete a session and all associated files |
-| `GET` | `/authsuccesslogin` | SSO callback — issues JWT, redirects |
-| `GET` | `/auth/callback` | OAuth2 callback — exchanges auth code for token |
+| `GET` | `/authsuccesslogin` | SSO callback - issues JWT, redirects |
+| `GET` | `/auth/callback` | OAuth2 callback - exchanges auth code for token |
 
 ### Example: Upload & Generate
 
@@ -247,7 +247,7 @@ brd-genius/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/brd-genius.git
+git clone https://github.com/hiborn4/BRD-Genius.git
 cd brd-genius
 
 # 2. Install dependencies
@@ -339,7 +339,7 @@ gcloud run deploy brd-genius \
   --set-secrets="ENV_CONFIG=gpt-endpoints:4"
 ```
 
-Secrets are loaded from **GCP Secret Manager** at runtime — no credentials in the container image.
+Secrets are loaded from **GCP Secret Manager** at runtime - no credentials in the container image.
 
 ### Environment Modes
 
@@ -352,7 +352,7 @@ Secrets are loaded from **GCP Secret Manager** at runtime — no credentials in 
 
 ## 📸 Screenshots & Demo
 
-> **For portfolio showcasing** — here's exactly what to capture:
+> **For portfolio showcasing** - here's exactly what to capture:
 
 ### Screenshots to Take
 
@@ -377,10 +377,10 @@ Place screenshots in `docs/screenshots/` and update the links below:
 ### Screen Recording (for GitHub README GIF)
 
 Record a 60-90 second walkthrough:
-1. **0:00–0:15** — POST `/upload` with a sample meeting recording
-2. **0:15–0:35** — Show the generated HTML BRD in browser
-3. **0:35–0:55** — Chat interaction (2-3 Q&A rounds)
-4. **0:55–1:10** — POST `/final`, download `.docx`, open in Word
+1. **0:00–0:15** - POST `/upload` with a sample meeting recording
+2. **0:15–0:35** - Show the generated HTML BRD in browser
+3. **0:35–0:55** - Chat interaction (2-3 Q&A rounds)
+4. **0:55–1:10** - POST `/final`, download `.docx`, open in Word
 
 **Tools:** [Loom](https://loom.com) (free) for screen recording → convert to GIF with [Ezgif](https://ezgif.com).
 
@@ -415,7 +415,7 @@ Record a 60-90 second walkthrough:
 - [ ] Streamlit or React frontend for non-technical users
 - [ ] Support for Google Meet & Zoom recordings via native integrations
 - [ ] PDF/DOCX template customization per organization
-- [ ] FRD (Functional Requirements Document) generation — L5 extended mode
+- [ ] FRD (Functional Requirements Document) generation - L5 extended mode
 - [ ] Multi-language BRD generation
 - [ ] Webhook support for async processing of large video files
 - [ ] Rate limiting and usage analytics dashboard
@@ -440,7 +440,7 @@ git push origin feature/your-feature-name
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
@@ -448,6 +448,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **Built with 🤖 multi-LLM pipelines and ☁️ cloud-native architecture**
 
-*If this project helped you, consider giving it a ⭐ — it means a lot!*
+*If this project helped you, consider giving it a ⭐ - it means a lot!*
 
 </div>

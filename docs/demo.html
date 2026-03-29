@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>BRD Genius — API Demo</title>
+<title>BRD Genius - API Demo</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 <style>
   :root {
@@ -539,21 +539,21 @@
       <div class="endpoint">
         <span class="method post">POST</span>
         <span class="endpoint-path">/brdfrdgeneration/upload</span>
-        <span class="endpoint-desc">Upload PDF, DOCX, TXT, MP4, or MP3 — triggers L1 + L2 + L3 pipeline</span>
+        <span class="endpoint-desc">Upload PDF, DOCX, TXT, MP4, or MP3 - triggers L1 + L2 + L3 pipeline</span>
         <span class="endpoint-tag tag-ai">AI Pipeline</span>
       </div>
 
       <div class="endpoint">
         <span class="method post">POST</span>
         <span class="endpoint-path">/brdfrdgeneration/chatbot</span>
-        <span class="endpoint-desc">Send/receive chatbot messages — L4 conversational refinement via Bedrock Claude</span>
+        <span class="endpoint-desc">Send/receive chatbot messages - L4 conversational refinement via Bedrock Claude</span>
         <span class="endpoint-tag tag-ai">AI · LangChain</span>
       </div>
 
       <div class="endpoint">
         <span class="method post">POST</span>
         <span class="endpoint-path">/brdfrdgeneration/final</span>
-        <span class="endpoint-desc">Generate final BRD — L5 synthesis using all context gathered so far</span>
+        <span class="endpoint-desc">Generate final BRD - L5 synthesis using all context gathered so far</span>
         <span class="endpoint-tag tag-ai">AI Pipeline</span>
       </div>
 
@@ -588,7 +588,7 @@
       <div class="endpoint">
         <span class="method get">GET</span>
         <span class="endpoint-path">/brdfrdgeneration/authsuccesslogin</span>
-        <span class="endpoint-desc">SSO callback — decodes JWT, creates session token, redirects user</span>
+        <span class="endpoint-desc">SSO callback - decodes JWT, creates session token, redirects user</span>
         <span class="endpoint-tag tag-auth">Auth · JWT</span>
       </div>
 
@@ -630,7 +630,7 @@
     </div>
 
     <div class="code-block" id="tab-chatbot">
-<span class="c"># Start chatbot session (L4 — AWS Bedrock Claude 3.5)</span>
+<span class="c"># Start chatbot session (L4 - AWS Bedrock Claude 3.5)</span>
 <span class="k">curl</span> -X POST http://localhost:8501/brdfrdgeneration/chatbot \
   -H <span class="s">"Content-Type: application/json"</span> \
   -d <span class="s">'{
@@ -648,7 +648,7 @@
   <span class="s">"session_id"</span>: <span class="v">"3f7a9b2c-1d4e-..."</span>
 }
 
-<span class="c"># Continue conversation — bot uses LangChain memory (last 20 turns)</span>
+<span class="c"># Continue conversation - bot uses LangChain memory (last 20 turns)</span>
 <span class="k">curl</span> -X POST http://localhost:8501/brdfrdgeneration/chatbot \
   -H <span class="s">"Content-Type: application/json"</span> \
   -d <span class="s">'{
@@ -660,7 +660,7 @@
     </div>
 
     <div class="code-block" id="tab-export">
-<span class="c"># Generate final polished BRD (L5 — GPT-4 synthesizes everything)</span>
+<span class="c"># Generate final polished BRD (L5 - GPT-4 synthesizes everything)</span>
 <span class="k">curl</span> -X POST http://localhost:8501/brdfrdgeneration/final \
   -H <span class="s">"Content-Type: application/json"</span> \
   -d <span class="s">'{

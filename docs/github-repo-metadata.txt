@@ -4,7 +4,7 @@
 ## Repository Name (suggested)
 brd-genius
 
-## Repository Description (160 chars max — paste directly into GitHub's description field)
+## Repository Description (160 chars max - paste directly into GitHub's description field)
 🧠 AI-powered REST API that converts meeting recordings & documents into structured Business Requirements Documents via a 5-layer LLM pipeline (Azure OpenAI + AWS Bedrock + LangChain).
 
 ## Topics / Tags (add these in GitHub's Topics field)

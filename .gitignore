@@ -1,0 +1,41 @@
+# Environment & Secrets
+.env
+*.json
+!brd_questions.json
+!links_output.json
+!policy_mapping.json
+
+# Firebase service account - NEVER commit this
+brd001-firebase-adminsdk-*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Local storage (middleware session files)
+app_files/middleware/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,25 @@
+# GitHub Repository Metadata
+# Use these when creating/editing your repository on GitHub
+
+## Repository Name (suggested)
+brd-genius
+
+## Repository Description (160 chars max — paste directly into GitHub's description field)
+🧠 AI-powered REST API that converts meeting recordings & documents into structured Business Requirements Documents via a 5-layer LLM pipeline (Azure OpenAI + AWS Bedrock + LangChain).
+
+## Topics / Tags (add these in GitHub's Topics field)
+brd-generator
+flask
+azure-openai
+aws-bedrock
+langchain
+gpt-4
+claude
+python
+nlp
+document-automation
+google-cloud
+firestore
+rest-api
+llm
+meeting-transcription
